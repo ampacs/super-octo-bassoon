@@ -46,6 +46,9 @@ const config = {
         //    }
         //}),
         new HtmlWebpackPlugin({ template: './client/index.html' })
+    ],
+    "presets": [
+        "@babel/preset-env"
     ]
 }
 

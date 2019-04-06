@@ -10,7 +10,7 @@ const worldCreator = game => {
     game.stage.disableVisibilityChange = true
     // Here we set the bounds of our game world
     game.world.setBounds(0, 0, width, height)
-    game.world.backgroundColor
+    //game.world.backgroundColor
     //createMap(game)
 }
 

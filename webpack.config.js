@@ -23,18 +23,27 @@ const config = {
             }
         ]
     },
-    optimization: {
-        minimizer: [new UglifyJsPlugin()],
-    },
+    //optimization: {
+    //    minimizer: [new UglifyJsPlugin()],
+    //},
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            },
-            output: {
-                comments: false
+        new UglifyJsPlugin({
+            uglifyOptions: {
+                warnings: false,
+                ie8: false,
+                output: {
+                    comments: false
+                }
             }
         }),
+        //new webpack.optimize.UglifyJsPlugin({
+        //    compress: {
+        //        warnings: false
+        //    },
+        //    output: {
+        //        comments: false
+        //    }
+        //}),
         new HtmlWebpackPlugin({ template: './client/index.html' })
     ]
 }

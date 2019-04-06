@@ -2,6 +2,9 @@
     "name": "super-octo-bassoon",
     "version": "0.0.1",
     "description": "",
+    "engines": {
+        "node": "10.15.3"
+    },
     "main": "index.js",
     "dependencies": {
         "@babel/core": "^7.0.0",

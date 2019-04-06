@@ -12,7 +12,8 @@ const config = {
         filename: 'index.js'
     },
     module: {
-        loaders: [
+        //loaders: [
+        rules: [
             {
                 test: /\.js?$/,
                 exclude: /node_modules/,
